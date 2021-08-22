@@ -1,46 +1,114 @@
 <!DOCTYPE html>
 <html>
+<head>
+<style>
+
+
+h1 {
+  
+  font-family: verdana;
+  
+}
+
+</style>
+</head>
 <body>
-
-<p>Karta (digitalna ali papirnata) je pripomoček in ne slepa navigacija. Pri uporabi vedno uporabljate zdravo pamet in se ne podajajte v nevarne situacije</p>
-<h1>Namestitev OruxMaps</h1>
-
-<p>OruxMaps je na voljo brezplačno na spletni strani ali plačljivo v Google Play trgovini. Razlik med verzijama skoraj ni. Prenos brezplačne verzije je mogoč na povezavi <a href="https://www.oruxmaps.com/cs/en/more/downloads"> OruxMaps </a>. 
-Za ročno namestitev apk datotek je prvič potrebno nastaviti dovoljenje. Za Android verzije od 8.0 dalje se to naredi za aplikacijo, ki namešča apk - v našem primeru brskalnik. Po prenosu apk datoteke vas bo čarovnik opozoril, da tega ne morete narediti brez spremembe nastavitev ter vam hkrati ponudil bližnjico do sprememb nastavitev. Za pomoč uporabite <a href="https://www.expressvpn.com/support/vpn-setup/enable-apk-installs-android/">povezavo</a>.</p>
-
-<h1>Namestitev OpenAndroMaps kart</h1>
-
-<p>Imejte aktivno wifi povezavo zaradi zahtev OruxMaps aplikacije ter nato odprite spletno stran <a href="https://www.openandromaps.org/en/downloads/europe">OpenAndroMaps</a> in kliknite "+" pred Slovenia inc. Istria. Iz seznama izberite Install in Orux. Gumb sproži prenos karte v aplikacijo OruxMaps ter lahko traja do nekaj minut. <br>
-Po namestitvi je potrebno ročno osvežiti zbirko kart. To naredite s klikom na ikono Zemljevid (zgoraj desno) -> "Zamenjaj karto/Switch map". V novem oknu kliknite napis "Offline" in ikono za osvežitev (puščice v krogu). Med kartami se more pojaviti napis Slovenia (mapsforge).
 <br>
-Nova različica kart je na voljo na začetku vsakega meseca ter jih je potrebno namestiti ročno (po istem postopku). Na voljo so za ves svet. Vir podatkov je projekt <a href="https://www.openstreetmap.org/">OpenstreetMap </a>.
+
+<p style="color: red" align="center"><i><b>Karta (digitalna ali papirnata) je pripomoček in ne slepa navigacija. Pri uporabi vedno uporabljate zdravo pamet in se ne podajajte v nevarne situacije.</b></i></p>
+
+<h1 align="center">Planinske aplikacije</h1>
+<p>Planinskih/outdoor/aktivnih aplikacij je danes malo morje in jih lahko razdelimo v skupine:
+<ul>
+	<li>posredniki zemljevidov</li>
+	<li>ponudniki (izdelovalci) zemljevidov</li>
+	<li>aplikacije, ki nudijo tematske vsebine izletov</li>
+</ul></p>
+
+<p>Ali obstaja možnost navigacije po planinskih poteh? Da. Vendar jo večina planinskih organizacij odsvetuje. Nekatere aplikacije vseeno nudijo funkcijo načrtovanja in izračuna poti med točko A in B na zemljevidu. Ena izmed takšnih je npr. plačljivi Outdooractive (bivši View Ranger).</p>
+
+
+<h3>PZS in podatki</h3>
+<p>Planinska zveza Slovenije pri nas vodi evidenco <b>uradnih</b> planinskih poti ter prodaja papirnate in digitalne planinske zemljevide. V digitalni sferi so njihovi izdelki najbolje integrirani v aplikacije Locus in Avenza.</p>
+<p>Seveda je virov kartografskih podatkov več, ena izmed takšnih baz je OpenStreetMap, ki je zaradi načela odprokodnosti in odprtih podatkov dostopen vsem - zastonj. Ravno zaradi tega je osnovni vir praktično vseh plačljivih aplikacij in njihovih kartografskih produktov. V OSM so že vključeni tudi državni prostorski podatki - npr. sloj Rabe tal MKGP.</p> 
+<p>Nekateri ponudniki njihove podatke oplementijo z lastnimi ali drugimi bazami - npr. plačljivi Koomot, spet drugi stavijo vse na galerijo poti/izletov, ki jih nalagajo uporabniki. Npr. Bergfex.</p>
+
+<p>En izmed redkih proizvajalcev kart, ki ima lastno aplikacijo je italijanski <a href="https://www.tabaccoeditrice.it/">Tabacco</a>. Znan je predvsem po Dolomitih, Karnijskih in Julijskih Alpah. 
+
+<h1 align="center">OruxMaps in Locus</h1>
+<h3>Orux</h3>
+<p>OruxMaps je švicarski nož kartografije za Android naprave, nudi vse kar tudi ostali - prikaz kartografskih podlag brez povezave, beleženje točk in sledi ter prikaz/uvoz poti. Je popolnoma prilagodljiv tako za pohodnike kot kolesarje ter ostale športe na tleh in v zraku. Ena izmed njegovih prednosti je prilagodljiva plošča na kateri sami izberemo koliko meritev/podatkov želimo videti. Na voljo so vse od razdalje, višine, ure zahoda kot povezava z merilcem srčnega utripa ali številne statistične analize aktivnosti. Oruxa nima trgovine kart za "one-click-purchase", vanj lahko uvozimo karkoli želimo - tudi spletne karte, kjer sami izbiramo območja brez povezave. S prenosom višinskih podatkov lahko vsak zemljevid prikažemo v 3D, s pomočjo izračuna poti v drugih aplikacijah (npr. Google maps) uvozi in prikazuje traso, itd. Ker nudi toliko je tudi vmesnik svojevrsten ampak ko ga osvojimo nam zleze pod kožo. Nudi tudi odčitavanje koordinat v različnih zapisih. Ni potrebna registracija, ne naročnina, nima trgovin, galerij, itd. Zgolj lastne karte. 
+</p>
+<img src="slike\azimut.jpg" height="600">
+<h5 >Predvsem pa nudi najbolj pomembno - prikaz lokacije in hitro analizo oddaljenosti in azimuta do željene točke. Brez navigacije. Od stojišča pri Koči pri Krnskih jezerih do sedla je 830m in azimut 339 stopinj.</h5>
+Po krivici se ga drži prekletstvo "težavne" namestitve, saj ga je možno namestiti z enim klikom.
+<br>
+V nadaljevanju bo predstavljeno:</p>
+<ul>
+	<li>Namestitev aplikacije</li>
+	<li>Uvoz kart</li>
+	<li>(po potrebi) Uvoz vizualizacije</li>
+</ul>
+<h3>Locus</h3>
+<p>Locus je proizvod podjetja in ne posameznika. Nudi podobne funkcionalnosti, a za višjo ceno ter z nakupi v aplikaciji. Za uporabnika, ki želi <b>tudi</b> rastrske PZS zemljevide je med boljšimi izbirami. Locus v svoji trgovini nudi tudi druge ponudnike - Kompass, Freytag and Berndt, itd. Največja prednost pred OruxMaps je ravno v integraciji proizvajalcev kart, ki svojih izdelkov ne nudijo samostojno. Uporabnik je zato "prisiljen" uporabljati aplikacijo, ki jo sicer mogoče ne bi.</p>
+
+<h2>Namestitev OruxMaps/Locus</h2>
+<p><b>Google Play trgovina</b></p>
+<p>OruxMaps je na voljo v <a href="https://play.google.com/store/apps/details?id=com.orux.oruxmapsDonate">Google Play trgovini</a> in stane 4.29€. To je to. Namestitev z enim klikom. Z nakupom podpremo avtorja aplikacije. <br>Locus je v Google Play na voljo brezplačno (a prikazuje reklame) ali v <a href="https://play.google.com/store/apps/details?id=menion.android.locus.pro">plačljivi verziji</a> za 7.89€ (ter nakupi zemljevidov v aplikaciji).
 </p>
 
-<h1>Namestitev OpenAndroMaps vizualizacije</h1>
-<p>Privzeto je prenešena karta prikazana v splošni (avto) vizualizaciji. Zgolj prvič je potrebno namestiti vizualizacijo z imenom Elevate 4, ki se nahaja na <a href="https://www.openandromaps.org/en/legend/elevate-mountain-hike-theme">povezavi</a>.
-Kliknite gumb "ORUX" za namestitev teme.  
-</p>
-<p>Ko je namestitev teme dokončana v aplikaciji OruxMaps kliknite ikono za več možnosti (zgoraj levo tri črte) ter kliknite na "Mapsforge oblika karte". Prikažejo se tri teme - privzeta, elements in elevate. Izberite slednjo. V primeru, da teme niso vidne zaprite aplikacijo in jo zopet zaženite.
+<p><b>Brezplačna namestitev</b></p>
+<p>V primeru, da ne želimo podpreti avtorja je OruxMaps na voljo tudi brezplačno. Bistvenih razlik med verzijama ni.<br>
+Korak 1: Prenos brezplačne verzije <a href="https://www.oruxmaps.com/cs/en/more/downloads"> OruxMaps</a> in zagon apk datoteke po prenosu. 
 <br>
-Elevate legenda simbolov <a href="https://www.openandromaps.org/wp-content/users/tobias/Elevate.pdf">PDF</a></p>
+Korak 2: (odvisno od telefona):
+Za ročno namestitev apk datotek je potrebno nastaviti dovoljenje. Za Android verzije od 8.0 dalje se to naredi za aplikacijo, ki namešča apk - v našem primeru brskalnik. Za pomoč uporabite <a href="https://www.expressvpn.com/support/vpn-setup/enable-apk-installs-android/">povezavo</a>.<br>
+Korak 3: Ga ni. Orux je nameščen.</p>
+
+<h2>Namestitev kartografske podlage</h2>
+<p>Orux privzeto nima nameščene nobene karte in za prikaz uporablja spletni vir OpenStreetMap. Cilj tega "priročnika" je namestitev zemljevidov projekta OpenAndroMaps. Postopek je enak za Locus in Orux.</p>
+
+<p>Imejte aktivno wifi povezavo zaradi zahtev OruxMaps aplikacije ter odprite spletno stran <a href="https://www.openandromaps.org/en/downloads/europe">OpenAndroMaps</a> in kliknite "+" pred Slovenia inc. Istria. 
+<br>Iz seznama izberite Install in Orux/Locus. Gumb sproži prenos karte v aplikacijo ter lahko traja do nekaj minut (OpenAndroMaps je projekt skupine prostovoljcev, ki sami krijejo stroške strežnikov zato jim ne moremo zameriti hitrosti prenosa). 
+<br>
+ORUX: Po namestitvi je potrebno ročno osvežiti zbirko kart. To naredite s klikom na ikono Zemljevid (zgoraj desno) -> "Zamenjaj karto/Switch map". V novem oknu kliknite napis "Offline" in ikono za osvežitev (puščice v krogu). Med kartami se more pojaviti napis Slovenia (mapsforge).
+<br>
+<br>
+Nova različica kart (z novimi podatki in spremembami vsebine) je na voljo na začetku vsakega meseca ter jih je potrebno namestiti ročno (po istem postopku). Na voljo so za ves svet. Vir podatkov je projekt <a href="https://www.openstreetmap.org/">OpenstreetMap</a>.
+</p>
+
+<h3>Namestitev OpenAndroMaps vizualizacije</h3>
+<p> Postopek je enak za Locus in Orux.</p>
+<p>Privzeto je prenešena karta prikazana brez plastnic in kategorizacije poti. Zgolj prvič je potrebno namestiti vizualizacijo z imenom Elevate 4, ki se nahaja na <a href="https://www.openandromaps.org/en/legend/elevate-mountain-hike-theme">povezavi</a>.
+Kliknite gumb "ORUX/LOCUS" za namestitev.  
+</p>
+<p>ORUX: Ko je namestitev teme dokončana, v aplikaciji kliknite ikono za več možnosti (zgoraj levo tri črte) ter kliknite na "Mapsforge oblika karte". Prikažejo se tri teme - privzeta, elements in elevate. Izberite slednjo. V primeru, da teme niso vidne zaprite aplikacijo in jo zopet zaženite.
+</p>
 <img src="slike\krn.jpg" height="600">
-<p>Območje Krna. Poti so prikazane glede na kategorijo težavnosti in ohranjenosti. OSM projekt uporablja švicarske <a href="https://www.bergfreunde.eu/alpine-grades-calculator/">SAC kategorije</a></p>
+<p>Območje Krna. Poti so prikazane glede na kategorijo težavnosti in ohranjenosti. OSM projekt uporablja švicarske <a href="https://www.bergfreunde.eu/alpine-grades-calculator/">SAC kategorije</a>. Elevate 4 legenda simbolov <a href="https://www.openandromaps.org/wp-content/users/tobias/Elevate.pdf">PDF</a></p>
 
 <h1>Druge karte?</h1>
-<p>Orux podpira ročni uvoz, priporočljiv je format mbtiles v katerem so lahko spravljene tako vektorske kot rastrske (papirnate) karte. Mogoč je tudi uvoz skeniranih papirnatih kart (če so umeščene v prostor/opremljene s koordinatami). Primer: </p>
+<p>Rastrske PZS karte lahko najlažje kupite in uvozite v Locus aplikaciji. Za Orux te možnosti uradno ni, saj PZS ne prodaja samostojnega digitalnega izdelka izven Locus/Avenza trgovine. Več na uradni strani <a href="https://www.pzs.si/novice.php?pid=11929">PZS in Locus</a>.</p>
+<p>Orux podpira ročni uvoz, priporočljiv je format mbtiles v katerem so lahko spravljene tako vektorske kot rastrske (papirnate) karte - npr. GURS zemljevidov v merilu 1:50.000. 
+<h2>GURS 1:50.000</h2>
+<img src="slike\gurs.jpg" height="600">
+<p>Topografska zbirka kart, ki jo (še vedno) vzdržuje Geodetska uprava Republike Slovenije. Posamezni listi, ki so kot odprti podatki na voljo na njihovi spletni strani so združeni v mbtiles formatu za celotno območje države v mojem oblaku - LINK.</p>
+<p>Datoteko shranite v mapo Orux/mapfiles/ ter osvežite seznam "Offline" kart brez povezave. Veselo uporabo.</p>
+
+<h2>Skenirane karte</h2>
+<p>Mogoč je tudi uvoz skeniranih papirnatih kart (če so umeščene v prostor/opremljene s koordinatami). S tem lahko v življenje spravite vse vaše kupljene papirnate karte. Kako? Z nekaj mukotrpnega dela s skenerjem in v programu QGIS. Primer: </p>
 <img src="slike\sidarta.jpg" height="600">
 
-<p>Opomba: zgolj za namene predstavitve. Avtor je <a href="https://sidarta.si/en/product/bohinj-125-000_en/">izdelek kupil </a>v papirnati obliki v uradni trgovini založnika.</p>
+<p>Opomba: zgolj za namene predstavitve. Avtor je <a href="https://sidarta.si/en/product/bohinj-125-000_en/">izdelek kupil </a>v papirnati obliki v uradni trgovini založnika. Sidarta na žalost še ne trži lastnih digitalnih izdelkov.</p>
 
-
-
-<h1>Locus</h1>
-<p>Prenos kart in namestitev vizualizacije je enaka tudi za Locus aplikacijo. Namesto gumbov z napisom Orux izberite gumbe z napisom Locus.</p>
 <br>
-<p>PZS karte lahko najlažje kupite in uvozite v Locus aplikaciji. Več na uradni strani PZS <a href="https://www.pzs.si/novice.php?pid=11929">PZS in Locus</a>.</p>
 
-<h1>Iphone?</h1>
-<p>Nadomestilo aplikacije OruxMaps je Cartograph 2 maps <a href="https://apps.apple.com/us/app/cartograph-2-maps/id1082995961"> Link </a></p>
 
+
+<h1>Apple IOS?</h1>
+<p>Dober nadomestek aplikacije OruxMaps je Cartograph 2 maps <a href="https://apps.apple.com/us/app/cartograph-2-maps/id1082995961"> Link </a>. Tudi vanjo lahko nameščamo mbtiles zemljevide po enakem postopku. </p>
+
+<br>
+<p>@Grega Žorž (gregazorz@gmail.com)</p>
 </body>
 </html>
