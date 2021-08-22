@@ -12,14 +12,24 @@ h1 {
 div {
 	padding: 15px;
 }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
 </style>
 </head>
 <body>
+
+<img src="slike\naslovna.jpg" height="600" class="center">
 <br>
 <div>
+
+
+<br>
 <p style="color: red" align="center"><i><b>Karta (digitalna ali papirnata) je pripomoček in ne slepa navigacija. Pri uporabi vedno uporabljate zdravo pamet in se ne podajajte v nevarne situacije.</b></i></p>
 
-<h1 align="center">Planinske aplikacije</h1>
 <p>Planinskih/outdoor/aktivnih aplikacij je danes malo morje. <br>
 <p>Ali obstaja možnost navigacije po planinskih poteh? Da. Vendar jo večina planinskih organizacij odsvetuje. Nekatere aplikacije vseeno nudijo funkcijo načrtovanja in izračuna poti med točko A in B na zemljevidu. Ena izmed takšnih je npr. plačljivi Outdooractive (bivši View Ranger).</p>
 
@@ -59,12 +69,13 @@ Korak 3: Ga ni. Orux je nameščen.</p>
 <h2>Namestitev kartografske podlage</h2>
 <p>Orux privzeto nima nameščene nobene karte in za prikaz uporablja spletni vir OpenStreetMap. Cilj tega "priročnika" je namestitev zemljevidov projekta OpenAndroMaps. Postopek je enak za Locus in Orux.</p>
 
-<p>Imejte aktivno wifi povezavo zaradi zahtev OruxMaps aplikacije ter odprite spletno stran <a href="https://www.openandromaps.org/en/downloads/europe">OpenAndroMaps</a> in kliknite "+" pred Slovenia inc. Istria. </p>
+<p>Imejte aktivno wifi povezavo zaradi zahtev OruxMaps aplikacije ter odprite spletno stran <a href="https://www.openandromaps.org/en/downloads/europe">OpenAndroMaps</a> in kliknite "+" pred Slovenia inc. Istria. Iz seznama izberite Install in Orux/Locus.  </p>
 <img src="slike\andro.jpg" height="600">
 <p>
-<br>Iz seznama izberite Install in Orux/Locus. Gumb sproži prenos karte v aplikacijo ter lahko traja do nekaj minut (OpenAndroMaps je projekt skupine prostovoljcev, ki sami krijejo stroške strežnikov zato jim ne moremo zameriti hitrosti prenosa). 
+<br>Gumb sproži prenos karte v aplikacijo ter lahko traja do nekaj minut (OpenAndroMaps je projekt skupine prostovoljcev, ki sami krijejo stroške strežnikov zato jim ne moremo zameriti hitrosti prenosa). 
 <br>
 ORUX: Po namestitvi je potrebno ročno osvežiti zbirko kart. To naredite s klikom na ikono Zemljevid (zgoraj desno) -> "Zamenjaj karto/Switch map". V novem oknu kliknite napis "Offline" in ikono za osvežitev (puščice v krogu). Med kartami se more pojaviti napis Slovenia (mapsforge).
+<img src="slike\uvoz.jpg" height="600">
 <br>
 <br>
 Nova različica kart (z novimi podatki in spremembami vsebine) je na voljo na začetku vsakega meseca ter jih je potrebno namestiti ročno (po istem postopku). Na voljo so za ves svet. Vir podatkov je projekt <a href="https://www.openstreetmap.org/">OpenstreetMap</a>.
@@ -76,8 +87,10 @@ Nova različica kart (z novimi podatki in spremembami vsebine) je na voljo na za
 Kliknite gumb "ORUX/LOCUS" za namestitev. 
 Več o uporabljeni simbologiji Elevate 4 je dosegljivo v <a href="https://www.openandromaps.org/wp-content/users/tobias/Elevate.pdf">PDF</a>. 
 </p>
+<img src="slike\stil.jpg" height="600">
 <p>ORUX: Ko je namestitev teme dokončana, v aplikaciji kliknite ikono za več možnosti (zgoraj levo tri črte) ter kliknite na "Mapsforge oblika karte". Prikažejo se tri teme - privzeta, elements in elevate. Izberite slednjo. V primeru, da teme niso vidne zaprite aplikacijo in jo zopet zaženite.
 </p>
+
 <img src="slike\krn.jpg" height="600">
 <p>Območje Krna. Poti so prikazane glede na kategorijo težavnosti in ohranjenosti. OSM projekt uporablja švicarske <a href="https://www.bergfreunde.eu/alpine-grades-calculator/">SAC kategorije</a>. </p>
 <h3>Delo z Oruxmaps</h3>
@@ -89,7 +102,7 @@ Več o uporabljeni simbologiji Elevate 4 je dosegljivo v <a href="https://www.op
 <h2>GURS 1:50.000</h2>
 <img src="slike\gurs.jpg" height="600">
 <p>Topografska zbirka kart, ki jo (še vedno) vzdržuje Geodetska uprava Republike Slovenije. Posamezni listi, ki so kot odprti podatki na voljo na njihovi spletni strani so združeni v mbtiles formatu za celotno območje države v mojem oblaku - LINK.</p>
-<p>Datoteko (3.5gb) shranite v mapo Orux/mapfiles/ ter osvežite seznam "Offline" kart brez povezave. Veselo uporabo.</p>
+<p>Datoteko (3.5gb) shranite v mapo Oruxmaps/mapfiles/ ter osvežite seznam kart brez povezave. Veselo uporabo.</p>
 
 <h2>Skenirane karte</h2>
 <p>Mogoč je tudi uvoz skeniranih papirnatih kart (če so umeščene v prostor/opremljene s koordinatami). S tem lahko v življenje spravite vse vaše kupljene papirnate karte. Kako? Z nekaj mukotrpnega dela s skenerjem in v programu QGIS. Primer: </p>
